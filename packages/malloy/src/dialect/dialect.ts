@@ -68,7 +68,7 @@ export interface QueryInfo {
   systemTimezone?: string;
 }
 
-const allUnits = [
+export const allUnits = [
   'microsecond',
   'millisecond',
   'second',

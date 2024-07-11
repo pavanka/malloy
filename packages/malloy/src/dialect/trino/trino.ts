@@ -388,7 +388,7 @@ ${indent(sql)}
   WITHIN`.split(/\s/);
 
   sqlMaybeQuoteIdentifier(identifier: string): string {
-    return '"' + identifier + '"';
+    return '`' + identifier + '`';
   }
 
   sqlNow(): Expr {

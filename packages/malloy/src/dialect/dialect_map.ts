@@ -21,6 +21,7 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
+import {DatabricksDialect} from './databricks';
 import {DuckDBDialect} from './duckdb';
 import {Dialect} from './dialect';
 import {PostgresDialect} from './postgres';
@@ -46,6 +47,7 @@ export function registerDialect(d: Dialect): void {
 
 registerDialect(new PostgresDialect());
 registerDialect(new StandardSQLDialect());
+registerDialect(new DatabricksDialect());
 registerDialect(new DuckDBDialect());
 registerDialect(new SnowflakeDialect());
 registerDialect(new TrinoDialect());

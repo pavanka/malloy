@@ -21,8 +21,10 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 export {
+  DatabricksDialect,
   DuckDBDialect,
   StandardSQLDialect,
+  TrinoDialect,
   PostgresDialect,
   SnowflakeDialect,
   registerDialect,
